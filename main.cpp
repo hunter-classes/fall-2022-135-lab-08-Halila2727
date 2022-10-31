@@ -29,5 +29,13 @@ int main()
     std::cout << "\nTask D: Framing center of picture: Completed at taskD.pgm\n";
     std::cout << "\n------------------\n";
 
+    //doubleScale("falloutguy.pgm");
+    std::cout << "\nTask E: Doubling size of image: Completed at taskE.pgm\n";
+    std::cout << "\n------------------\n";
+
+    pixelate("image1.pgm");
+    std::cout << "\nTask F: Pixelating image: Completed at taskF.pgm\n";
+    std::cout << "\n------------------\n";
+
     return 0;
 }

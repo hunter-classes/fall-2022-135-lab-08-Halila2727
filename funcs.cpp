@@ -134,3 +134,51 @@ void frame(std::string input)
     
     writeImage("taskD.pgm", output, height, width);    
 }
+
+void doubleScale(std::string input)
+{
+    int height = 0;
+    int width = 0;
+    int image[MAX_H][MAX_W];
+
+    readImage(input, image, height, width);
+
+    int output[MAX_H][MAX_W];
+
+    for(int row = 0; row < height*2; row++) 
+    {
+        for(int col = 0; col < width*2; col++) 
+        {
+            output[row][col] = image[row][col]/2;
+        }
+    }
+    
+    writeImage("taskE.pgm", output, height*2, width*2);
+}
+
+void pixelate(std::string input)
+{
+    int height = 0;
+    int width = 0;
+    int image[MAX_H][MAX_W];
+    int average = 0;
+
+    readImage(input, image, height, width);
+
+    int output[MAX_H][MAX_W];
+
+    for(int row = 0; row < height; row = row+2)
+    {
+        for(int col = 0; col < width; col=col+2)
+        {
+            average = (image[row][col] + image[row + 1][col] 
+                + image[row][col + 1] + image[row + 1][col + 1]) / 4;
+            output[row][col] = average;
+            output[row + 1][col] = average;
+            output[row][col + 1] = average;
+            output[row + 1][col + 1] = average;
+        }
+    }
+    
+    writeImage("taskF.pgm", output, height, width);
+}

@@ -6,7 +6,9 @@
 
 * GitHub username: Halila2727
 
-* Notes:
+* Notes: For all tasks except for E, I used image1.pgm
+For task E, I used a resized version of image2, which I provided in the repo (image2-resize.pgm).
+
 
 
   

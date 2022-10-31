@@ -17,7 +17,7 @@ int main()
     std::cout << "\nTask A: Inverting Image: Completed at taskA.pgm\n";
     std::cout << "\n------------------\n";
     
-    //invertHalf("image1.pgm");
+    invertHalf("image1.pgm");
     std::cout << "\nTask B: Inverting Half the Image: Completed at taskB.pgm\n";
     std::cout << "\n------------------\n";
     
@@ -29,7 +29,7 @@ int main()
     std::cout << "\nTask D: Framing center of picture: Completed at taskD.pgm\n";
     std::cout << "\n------------------\n";
 
-    //doubleScale("falloutguy.pgm");
+    doubleScale("falloutguy.pgm");
     std::cout << "\nTask E: Doubling size of image: Completed at taskE.pgm\n";
     std::cout << "\n------------------\n";
 

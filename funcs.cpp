@@ -46,9 +46,16 @@ void invertHalf(std::string input)
 
     for(int row = 0; row < height; row++) 
     {
-        for(int col = (width/2); col < width; col++) 
+        for(int col = 0; col < width; col++) 
         {
-            output[row][col] = 255 - image[row][col];
+            if(col >= width/2)
+            {
+                output[row][col] = 255 - image[row][col];
+            }
+            else
+            {
+                output[row][col] = image[row][col];
+            }
         }
     }
     
@@ -149,7 +156,7 @@ void doubleScale(std::string input)
     {
         for(int col = 0; col < width*2; col++) 
         {
-            output[row][col] = image[row][col]/2;
+            output[row][col] = image[row/2][col/2];
         }
     }
     

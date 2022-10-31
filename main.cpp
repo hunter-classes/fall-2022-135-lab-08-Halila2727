@@ -29,7 +29,7 @@ int main()
     std::cout << "\nTask D: Framing center of picture: Completed at taskD.pgm\n";
     std::cout << "\n------------------\n";
 
-    doubleScale("falloutguy.pgm");
+    doubleScale("image2-resize.pgm");
     std::cout << "\nTask E: Doubling size of image: Completed at taskE.pgm\n";
     std::cout << "\n------------------\n";
 

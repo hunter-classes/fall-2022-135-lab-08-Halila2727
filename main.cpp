@@ -17,11 +17,17 @@ int main()
     std::cout << "\nTask A: Inverting Image: Completed at taskA.pgm\n";
     std::cout << "\n------------------\n";
     
-    invertHalf("image1.pgm");
+    //invertHalf("image1.pgm");
     std::cout << "\nTask B: Inverting Half the Image: Completed at taskB.pgm\n";
     std::cout << "\n------------------\n";
     
-    //std::cout << 
+    box("image1.pgm");
+    std::cout << "\nTask C: Create a box in the picture: Completed at taskC.pgm\n";
+    std::cout << "\n------------------\n";
+
+    frame("image1.pgm");
+    std::cout << "\nTask D: Framing center of picture: Completed at taskD.pgm\n";
+    std::cout << "\n------------------\n";
 
     return 0;
 }

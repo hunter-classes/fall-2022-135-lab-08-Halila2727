@@ -1,12 +1,14 @@
 * Fall 2022 - Lab 08
 
-* Last name:
+* Last name: Akca
 
-* First name:
+* First name: Halil
 
-* GitHub username:
+* GitHub username: Halila2727
 
-* Notes:
+* Notes: For all tasks except for E, I used image1.pgm
+For task E, I used a resized version of image2, which I provided in the repo (image2-resize.pgm).
+
 
 
   
